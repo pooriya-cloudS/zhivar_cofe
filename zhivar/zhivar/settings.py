@@ -24,11 +24,12 @@ SECRET_KEY = 'django-insecure-8&zdh6i!!0^6b1n^-8%%p+2blz*5_**o9oph8iyriieg4xj@2r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["zhivarcoffee.info", "www.zhivarcoffee.info", "62.106.95.136"]
+ALLOWED_HOSTS = ["127.0.0.1", "zhivarcoffee.info", "www.zhivarcoffee.info", "62.106.95.136"]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -36,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'menu.apps.MenuConfig',
-    'rest_framework'
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
